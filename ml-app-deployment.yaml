@@ -15,5 +15,6 @@ spec:
       containers:
       - name: chla-kube
         image: chla-kube:latest
+        imagePullPolicy: Never
         ports:
         - containerPort: 8501
