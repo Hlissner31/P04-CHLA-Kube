@@ -140,7 +140,7 @@ def preprocess_and_align(appointments, feature_names):
 
 # Streamlit App
 def run_app():
-    st.title("CHLA Clinic Appointment No-Show Prediction")
+    st.title("CHLA Clinic Appointment No-Show Prediction2")
 
     # Predefined clinic options
     clinic_options = [
