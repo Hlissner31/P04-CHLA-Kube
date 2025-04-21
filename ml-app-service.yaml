@@ -3,11 +3,10 @@ kind: Service
 metadata:
   name: chla-kube-service
 spec:
+  type: LoadBalancer
   selector:
     app: chla-kube
-  type: NodePort
   ports:
     - protocol: TCP
       port: 8501
       targetPort: 8501
-      nodePort: 30008
