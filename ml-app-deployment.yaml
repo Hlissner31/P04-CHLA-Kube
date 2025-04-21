@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: chla-kube
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: chla-kube
+  template:
+    metadata:
+      labels:
+        app: chla-kube
+    spec:
+      containers:
+      - name: chla-kube
+        image: chla-kube:latest
+        ports:
+        - containerPort: 8501
